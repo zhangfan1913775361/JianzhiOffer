@@ -17,3 +17,5 @@ public void preOrderUnRecur(Node head){
             }
         }
     }
+
+二叉树有多种表达，对二叉树进行前中后序遍历，是对二叉树的重新定义之一
