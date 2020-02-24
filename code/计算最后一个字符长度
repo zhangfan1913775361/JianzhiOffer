@@ -1,0 +1,33 @@
+    //写一个程序，接受一个由字母和数字组成的字符串和一个字符，输出在
+//该字符串中有该字符的个数，不区分大小写
+//示例：
+//ABCCDDDEEFFFF
+//E
+//输出2
+ 
+import java.util.Scanner;
+ 
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String all = "";
+        String one = "";
+        char[] ac;
+//        char temp;
+        int num = 0;
+ 
+        while (sc.hasNext()){
+            all = sc.nextLine();
+            one = sc.nextLine();
+            ac = all.toCharArray();
+//            temp存储需要的字符
+//            temp = one.charAt(0);
+            for (int i = 0;i<ac.length;i++){
+                if (one.equalsIgnoreCase(String.valueOf(ac[i]))){
+                    num++;
+                }
+            }
+            System.out.println(num);
+        }
+    }
+}
